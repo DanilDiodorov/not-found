@@ -6,24 +6,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Сайт недоступен</title>
         <style>
+            .body {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
             .block {
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 height: 100vh;
                 gap: 50px;
             }
             .image {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
+                margin-top: 10px;
             }
             .block-wrapper {
                 display: flex;
-                align-items: center;
+                align-items: start;
                 justify-content: center;
                 width: 700px;
                 gap: 30px;
+            }
+            @media screen and (max-width: 700px) {
+                .block-wrapper {
+                    width: 100%;
+                    padding: 0 10px;
+                }
             }
             .text {
                 font-size: 20px;
@@ -35,6 +46,7 @@
             }
             .logo {
                 width: 300px;
+                margin-top: 200px;
             }
         </style>
     </head>
